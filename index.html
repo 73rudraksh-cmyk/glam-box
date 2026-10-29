@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glam Box | Luxury Cosmetic Store | Kaushalpuri, Lucknow</title>
+  <meta name="description" content="Glam Box is Lucknow's boutique cosmetic store located near P.S Lawn, Kaushalpuri. Discover authentic makeup brands, luxury skincare, bridal beauty & perfumes.">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💄</text></svg>">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-left">
+        <!-- Live Open / Closed Status at Very Beginning Corner -->
+        <div class="store-live-status status-closed" id="storeLiveStatus">
+          <span class="status-pulse-dot"></span>
+          <i class="fa-solid fa-door-closed"></i>
+          <span>Checking Status...</span>
+        </div>
+        <span>•</span>
+        <span><i class="fa-solid fa-location-dot gold-star"></i> Near P.S Lawn, Kaushalpuri, Lucknow</span>
+        <span>•</span>
+        <span><i class="fa-solid fa-clock gold-star"></i> 11:00 AM – 8:30 PM</span>
+      </div>
+      <div class="top-bar-right">
+        <span>Call or WhatsApp:</span>
+        <a href="tel:8738950652"><i class="fa-solid fa-phone"></i> 8738950652</a>
+        <span>•</span>
+        <a href="https://wa.me/918738950652?text=Hi!!%20I%20am%20your%20Glam%20box%20customer,%20can%20you%20please%20solve%20my%20query:%20" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #25D366;"></i> WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="#home" class="brand-logo">
+        <div style="display: flex; align-items: center;">
+          <span class="brand-name">Glam <span>Box</span></span>
+          <span class="brand-live-pill" id="brandLiveStatus">
+            <span class="status-pulse-dot"></span>
+            <span>Open</span>
+          </span>
+        </div>
+        <span class="brand-subtitle">Cosmetics & Beauty Boutique</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About Store</a></li>
+          <li><a href="#products" class="nav-link">Popular Products</a></li>
+          <li><a href="#gallery" class="nav-link">Store Gallery</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#visit" class="nav-link">Visit & Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://wa.me/918738950652?text=Hi!!%20I%20am%20your%20Glam%20box%20customer,%20can%20you%20please%20solve%20my%20query:%20" target="_blank" class="btn btn-primary">
+          <i class="fa-brands fa-whatsapp"></i> Chat On WhatsApp
+        </a>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+    
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="luxury-tag">
+          <i class="fa-solid fa-sparkles"></i> Welcome to Glam Box • Lucknow
+        </div>
+        <h1 class="hero-title">
+          Unbox Your Radiance With <span class="gradient-text">Glam Box</span>
+        </h1>
+        <p class="hero-description">
+          Lucknow's destination for 100% authentic cosmetic collections, bridal beauty essentials, skincare treasures, and signature fragrances. Visit our boutique in Kaushalpuri to find your perfect match in person.
+        </p>
+        
+        <div class="hero-cta-group">
+          <a href="#visit" class="btn btn-primary">
+            <i class="fa-solid fa-map-location-dot"></i> Visit Our Store
+          </a>
+          <a href="tel:8738950652" class="btn btn-outline">
+            <i class="fa-solid fa-phone"></i> Call 8738950652
+          </a>
+          <a href="#reviews" class="btn btn-gold">
+            <i class="fa-solid fa-star"></i> Read Reviews
+          </a>
+        </div>
+
+        <div class="hero-highlights">
+          <div class="hero-highlight-item">
+            <div class="highlight-icon"><i class="fa-solid fa-certificate"></i></div>
+            <div class="highlight-text">
+              <h4>100% Genuine</h4>
+              <p>Authentic Branded Products</p>
+            </div>
+          </div>
+          <div class="hero-highlight-item">
+            <div class="highlight-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <div class="highlight-text">
+              <h4>Free Swatch & Advice</h4>
+              <p>Personalized Shade Matching</p>
+            </div>
+          </div>
+          <div class="hero-highlight-item">
+            <div class="highlight-icon"><i class="fa-solid fa-gem"></i></div>
+            <div class="highlight-text">
+              <h4>Bridal & Everyday</h4>
+              <p>Complete Beauty Ranges</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card-stack">
+          <!-- Main Hero Image: Real Glam Box Store & Customer Consultation -->
+          <img src="images/store-service.jpg" 
+               alt="Glam Box Store Lucknow - Customer Beauty Consultation" 
+               class="hero-main-img">
+        </div>
+
+        <div class="hero-floating-badge">
+          <div class="badge-icon">
+            <i class="fa-solid fa-store"></i>
+          </div>
+          <div class="badge-text">
+            <strong>Now Open in Lucknow!</strong>
+            <span>Near P.S Lawn, Kaushalpuri</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Informational Note Strip (Emphasizing Info & In-Store Experience, No Ordering Page) -->
+  <div class="info-strip">
+    <div class="container">
+      <div class="info-strip-box">
+        <div class="info-strip-text">
+          <i class="fa-solid fa-circle-info info-strip-icon"></i>
+          <div>
+            <p><strong>Showcase & Informational Website:</strong> We are an exclusive in-store boutique experience! Browse our store lookbook, read honest reviews, and visit or call us directly in Kaushalpuri, Lucknow. <em>(No online ordering / cart on this website)</em>.</p>
+          </div>
+        </div>
+        <a href="#visit" class="btn btn-outline" style="white-space: nowrap; font-size: 0.85rem;">
+          <i class="fa-solid fa-compass"></i> Get Directions
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section class="section about-section" id="about">
+    <div class="container about-grid">
+      <div class="about-image-wrapper">
+        <img src="images/store-front.jpg" 
+             alt="Glam Box Storefront Signboard Near P.S Lawn Kaushalpuri" 
+             class="about-main-img">
+        
+        <div class="about-experience-card">
+          <div class="exp-number">100%</div>
+          <div class="exp-label">Original & Authentic</div>
+          <small style="opacity: 0.85; font-size: 0.72rem;">A Unit of Rudraksh Services</small>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <div class="luxury-tag">About Our Store</div>
+        <h2>Welcome to Glam Box (Beauty & Fusion Store)</h2>
+        <p>
+          Conveniently located near <strong>P.S Lawn in Kaushalpuri, Gomtinagar Extn., Lucknow</strong>, <strong>Glam Box</strong> is your neighborhood's premier beauty boutique. We bring you 100% genuine cosmetics, bridal hampers, artificial jewellery, bangles, festive mehndi, gift items, and planters in a warm, welcoming environment.
+        </p>
+        <p>
+          Unlike crowded shopping aisles or unreliable online websites where shades often disappoint, Glam Box gives you a tactile, hands-on experience. Test textures, swatch nail and foundation shades, and consult with our friendly team.
+        </p>
+
+        <!-- Our Services Column Box -->
+        <div class="our-services-card">
+          <div class="our-services-header">
+            <span class="service-point-icon" style="background: var(--rose-accent); color: #FFF; border-color: var(--rose-accent);">
+              <i class="fa-solid fa-sparkles"></i>
+            </span>
+            <h3>Our Services & Offerings</h3>
+          </div>
+          <ul class="services-points-grid">
+            <li class="service-point-item">
+              <span class="service-point-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+              <span>Cosmetic Products</span>
+            </li>
+            <li class="service-point-item">
+              <span class="service-point-icon"><i class="fa-solid fa-hand-sparkles"></i></span>
+              <span>Mehndi</span>
+            </li>
+            <li class="service-point-item">
+              <span class="service-point-icon"><i class="fa-solid fa-gift"></i></span>
+              <span>Gift Items</span>
+            </li>
+            <li class="service-point-item">
+              <span class="service-point-icon"><i class="fa-solid fa-om"></i></span>
+              <span>Pooja Articles</span>
+            </li>
+            <li class="service-point-item">
+              <span class="service-point-icon"><i class="fa-solid fa-seedling"></i></span>
+              <span>Plants</span>
+            </li>
+            <li class="service-point-item">
+              <span class="service-point-icon"><i class="fa-solid fa-ring"></i></span>
+              <span>Bangles</span>
+            </li>
+            <li class="service-point-item">
+              <span class="service-point-icon"><i class="fa-solid fa-gem"></i></span>
+              <span>Artificial Jewellery</span>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="about-feature-list">
+          <li class="about-feature-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>100% authentic cosmetics — no duplicates</span>
+          </li>
+          <li class="about-feature-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Sparkling artificial jewellery, earrings & bangles</span>
+          </li>
+          <li class="about-feature-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Festive mehndi & customized gift articles</span>
+          </li>
+          <li class="about-feature-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Accessible location with easy parking near P.S Lawn</span>
+          </li>
+        </ul>
+
+        <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+          <a href="#gallery" class="btn btn-primary">
+            <i class="fa-solid fa-images"></i> See Store Lookbook
+          </a>
+          <a href="tel:8738950652" class="btn btn-outline">
+            <i class="fa-solid fa-phone-volume"></i> Inquire at 8738950652
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular In-Store Products Section -->
+  <section class="section products-section" id="products">
+    <div class="container">
+      <div class="section-title-wrap">
+        <div class="luxury-tag">Trending In-Store Picks</div>
+        <h2 class="section-title">Popular Products at Glam Box</h2>
+        <p class="section-subtitle">
+          Explore our most-loved jewellery collections, bridal hair accessories, stone bangles, festive sets, and beauty essentials. Available for purchase in person at our Kaushalpuri boutique!
+        </p>
+      </div>
+
+      <!-- Product Category Filters -->
+      <div class="gallery-filter" style="margin-bottom: 35px;">
+        <button class="filter-btn product-filter-btn active" data-filter="all">All Products (11)</button>
+        <button class="filter-btn product-filter-btn" data-filter="jewellery">Jewellery & Bangles</button>
+        <button class="filter-btn product-filter-btn" data-filter="bridal">Bridal & Hair Glam</button>
+        <button class="filter-btn product-filter-btn" data-filter="festive">Festive & Planters</button>
+        <button class="filter-btn product-filter-btn" data-filter="care">Hair & Body Care</button>
+      </div>
+
+      <!-- Product Cards Grid -->
+      <div class="product-grid" id="productGrid">
+        <!-- Product 1: Kundan & Meenakari Jhumkas -->
+        <div class="product-card" data-category="jewellery">
+          <div class="product-img-box">
+            <span class="product-badge-pill gold">Best Seller</span>
+            <img src="images/products/kundan-meenakari-jhumkas.jpg" alt="Kundan and Meenakari Bahubali Jhumkas">
+            <div class="product-zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+          </div>
+          <div class="product-content">
+            <span class="product-category-tag">Fashion Jewellery</span>
+            <h3 class="product-title">Kundan & Meenakari Jhumkas</h3>
+            <p class="product-desc">Traditional handcrafted jhumkis with Bahubali ear chains in emerald green, ruby pink, royal blue & gold finish.</p>
+            <div class="product-status">
+              <span class="pulse-dot"></span> In-Stock at Kaushalpuri Store
+            </div>
+            <a href="https://wa.me/918738950652?text=Hi!!%20I%20am%20your%20Glam%20box%20customer,%20can%20you%20please%20solve%20my%20query:%20" target="_blank" class="btn-whatsapp-inquire">
+              <i class="fa-brands fa-whatsapp"></i> Inquire on WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Product 2: Designer Chandbali Earrings -->
+        <div class="product-card" data-category="jewellery">
+          <div class="product-img-box">
+            <span class="product-badge-pill">Party Glam</span>
+            <img src="images/products/designer-chandbali-earrings.jpg" alt="Krishna Designer Chandbali Earrings">
+            <div class="product-zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+          </div>
+          <div class="product-content">
+            <span class="product-category-tag">Earrings</span>
+            <h3 class="product-title">Krishna Chandbali Drops</h3>
+            <p class="product-desc">Intricate floral stone kundan chandbalis accented with wine, lavender lilac & vibrant pink crystal bead drops.</p>
+            <div class="product-status">
+              <span class="pulse-dot"></span> In-Stock at Kaushalpuri Store
+            </div>
+            <a href="https://wa.me/918738950652?text=Hi!!%20I%20am%20your%20Glam%20box%20customer,%20can%20you%20please%20solve%20my%20query:%20" target="_blank" class="btn-whatsapp-inquire">
+              <i class="fa-brands fa-whatsapp"></i> Inquire on WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Product 3: Crystal Stone Studs -->
+        <div class="product-card" data-category="jewellery">
+          <div class="product-img-box">
+            <span class="product-badge-pill rose">Affordable Glam</span>
+            <img src="images/products/crystal-stone-studs.jpg" alt="Crystal Stone Diamond Halo Studs">
+            <div class="product-zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+          </div>
+          <div class="product-content">
+            <span class="product-category-tag">Daily & Party Studs</span>
+            <h3 class="product-title">Crystal Halo Stud Earrings</h3>
+            <p class="product-desc">Emerald-cut crystal gemstone studs in ruby red, turquoise, baby pink & champagne amber with sparkling diamond halo borders.</p>
+            <div class="product-status">
+              <span class="pulse-dot"></span> In-Stock at Kaushalpuri Store
+            </div>
+            <a href="https://wa.me/918738950652?text=Hi!!%20I%20am%20your%20Glam%20box%20customer,%20can%20you%20please%20solve%20my%20query:%20" target="_blank" class="btn-whatsapp-inquire">
+              <i class="fa-brands fa-whatsapp"></i> Inquire on WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Product 4: Bridal Stone Bangles & Chooda -->
+        <div class="product-card" data-category="jewellery">
+          <div class="product-img-box">
+            <span class="product-badge-pill gold">Bridal Trending</span>
+            <img src="images/products/bridal-stone-bangles-set.jpg" alt="Bridal Stone Bangles and Chooda Sets">
+            <div class="product-zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+          </div>
+          <div class="product-content">
+            <span class="product-category-tag">Bangles & Kadas</span>
+            <h3 class="product-title">Bridal Stone Bangles & Chooda</h3>
+            <p class="product-desc">Opulent red & gold stone-studded chooda sets, multicolor glitter glass bangles, and silver crystal festive kadas.</p>
+            <div class="product-status">
+              <span class="pulse-dot"></span> In-Stock at Kaushalpuri Store
+            </div>
+            <a href="https://wa.me/918738950652?text=Hi!!%20I%20am%20your%20Glam%20box%20customer,%20can%20you%20please%20solve%20my%20query:%20" target="_blank" class="btn-whatsapp-inquire">
+              <i class="fa-brands fa-whatsapp"></i> Inquire on WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Product 5: Designer Mangalsutra & Pendants -->
+        <div class="product-card" data-category="jewellery">
+          <div class="product-img-box">
+            <span class="product-badge-pill">Daily & Festive</span>
+            <img src="images/products/designer-mangalsutra-pendants.jpg" alt="Designer Gold-Plated Mangalsutra Pendants">
+            <div class="product-zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+          </div>
+          <div class="product-content">
+            <span class="product-category-tag">Necklaces & Chains</span>
+            <h3 class="product-title">Gold-Plated Mangalsutra Sets</h3>
+            <p class="product-desc">Contemporary curved diamond pendants, traditional Meenakari round filigree pendants with multi-strand black bead chains.</p>
+            <div class="product-status">
+              <span class="pulse-dot"></span> In-Stock at Kaushalpuri Store
+            </div>
+            <a href="https://wa.me/918738950652?text=Hi!!%20I%20am%20your%20Glam%20box%20customer,%20can%20you%20please%20solve%20my%20query:%20" target="_blank" class="btn-whatsapp-inquire">
+              <i class="fa-brands fa-whatsapp"></i> Inquire on WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Product 6: Bridal Nath & Maang Tikka -->
+        <div class="product-card" data-category="bridal">
+          <div class="product-img-box">
+            <span class="product-badge-pill rose">Bridal Special</span>
+            <img src="images/products/bridal-nath-maang-tikka.jpg" alt="Bridal Nose Ring Nath and Maang Tikka">
+            <div class="product-zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+          </div>
+          <div class="product-content">
+            <span class="product-category-tag">Bridal Jewellery</span>
+            <h3 class="product-title">Bridal Nath & Maang Tikka</h3>
+            <p class="product-desc">Bodhi brand handcrafted bridal nose rings with delicate pearl string chains, paired with royal gold & kundan maang tikkas.</p>
+            <div class="product-status">
+              <span class="pulse-dot"></span> In-Stock at Kaushalpuri Store
+            </div>
+            <a href="https://wa.me/918738950652?text=Hi!!%20I%20am%20your%20Glam%20box%20customer,%20can%20you%20please%20solve%20my%20query:%20" target="_blank" class="btn-whatsapp-inquire">
+              <i class="fa-brands fa-whatsapp"></i> Inquire on WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Product 7: Velvet Rose Gajra & Sheeshpatti -->
+        <div class="product-card" data-category="bridal">
+          <div class="product-img-box">
+            <span class="product-badge-pill gold">Hair Artistry</span>
+            <img src="images/products/bridal-rose-gajra-sheeshpatti.jpg" alt="Velvet Rose Gajra and Kundan Sheeshpatti">
+            <div class="product-zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+          </div>
+          <div class="product-content">
+            <span class="product-category-tag">Hair Accessories</span>
+            <h3 class="product-title">Rose Gajra & Sheeshpatti</h3>
+            <p class="product-desc">Deep red velvet rose bun gajras, ornate silver kundan matha patti/sheeshpatti with chand drop, and crystal hair comb pins.</p>
+            <div class="product-status">
+              <span class="pulse-dot"></span> In-Stock at Kaushalpuri Store
+            </div>
+            <a href="https://wa.me/918738950652?text=Hi!!%20I%20am%20your%20Glam%20box%20customer,%20can%20you%20please%20solve%20my%20query:%20" target="_blank" class="btn-whatsapp-inquire">
+              <i class="fa-brands fa-whatsapp"></i> Inquire on WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Product 8: Mogra & Rose Hair Choti -->
+        <div class="product-card" data-category="bridal">
+          <div class="product-img-box">
+            <span class="product-badge-pill">Traditional Veni</span>
+            <img src="images/products/mogra-rose-hair-accessories.jpg" alt="Mogra and Rose Bridal Hair Choti Garland">
+            <div class="product-zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+          </div>
+          <div class="product-content">
+            <span class="product-category-tag">Hair Garland</span>
+            <h3 class="product-title">Mogra & Rose Braid Garlands</h3>
+            <p class="product-desc">Full cascading white mogra floral choti garlands and dense mogra-rose circular bridal venis for weddings & pooja occasions.</p>
+            <div class="product-status">
+              <span class="pulse-dot"></span> In-Stock at Kaushalpuri Store
+            </div>
+            <a href="https://wa.me/918738950652?text=Hi!!%20I%20am%20your%20Glam%20box%20customer,%20can%20you%20please%20solve%20my%20query:%20" target="_blank" class="btn-whatsapp-inquire">
+              <i class="fa-brands fa-whatsapp"></i> Inquire on WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Product 9: Festive Pooja Thali Set -->
+        <div class="product-card" data-category="festive">
+          <div class="product-img-box">
+            <span class="product-badge-pill rose">Festive Special</span>
+            <img src="images/products/festive-pooja-thali-set.jpg" alt="Decorated Karwa Chauth Pooja Thali Set">
+            <div class="product-zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+          </div>
+          <div class="product-content">
+            <span class="product-category-tag">Pooja Articles</span>
+            <h3 class="product-title">Decorated Pooja Thali Set</h3>
+            <p class="product-desc">Exquisite Karwa Chauth & festival set with embroidered lace Pooja Thali, matching gold lace Channi (sieve), Lota & decorative Diya.</p>
+            <div class="product-status">
+              <span class="pulse-dot"></span> In-Stock at Kaushalpuri Store
+            </div>
+            <a href="https://wa.me/918738950652?text=Hi!!%20I%20am%20your%20Glam%20box%20customer,%20can%20you%20please%20solve%20my%20query:%20" target="_blank" class="btn-whatsapp-inquire">
+              <i class="fa-brands fa-whatsapp"></i> Inquire on WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Product 10: Cute Hand-Painted Planters -->
+        <div class="product-card" data-category="festive">
+          <div class="product-img-box">
+            <span class="product-badge-pill gold">Decorative Planters</span>
+            <img src="images/products/hand-painted-planters.jpg" alt="Hand Painted Decorative Planters and Plants">
+            <div class="product-zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+          </div>
+          <div class="product-content">
+            <span class="product-category-tag">Home Decor & Planters</span>
+            <h3 class="product-title">Hand-Painted Planters & Pots</h3>
+            <p class="product-desc">Charming animal-motif and polka dot decorative planters with healthy flowering and air-purifying indoor plants.</p>
+            <div class="product-status">
+              <span class="pulse-dot"></span> In-Stock at Kaushalpuri Store
+            </div>
+            <a href="https://wa.me/918738950652?text=Hi!!%20I%20am%20your%20Glam%20box%20customer,%20can%20you%20please%20solve%20my%20query:%20" target="_blank" class="btn-whatsapp-inquire">
+              <i class="fa-brands fa-whatsapp"></i> Inquire on WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Product 11: Personal Care Essentials -->
+        <div class="product-card" data-category="care">
+          <div class="product-img-box">
+            <span class="product-badge-pill">Hair & Body Care</span>
+            <img src="images/products/personal-care-essentials.jpg" alt="Personal Care Body Wash Hair Pins and Accessories">
+            <div class="product-zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+          </div>
+          <div class="product-content">
+            <span class="product-category-tag">Hair Styling & Body Care</span>
+            <h3 class="product-title">Hair Styling & Body Essentials</h3>
+            <p class="product-desc">WOW Skin Science body wash, Ekta export quality jura pins, Lakme braids, golden bridal parandas with mirror latkans & hair claw clips.</p>
+            <div class="product-status">
+              <span class="pulse-dot"></span> In-Stock at Kaushalpuri Store
+            </div>
+            <a href="https://wa.me/918738950652?text=Hi!!%20I%20am%20your%20Glam%20box%20customer,%20can%20you%20please%20solve%20my%20query:%20" target="_blank" class="btn-whatsapp-inquire">
+              <i class="fa-brands fa-whatsapp"></i> Inquire on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="in-store-notice" style="margin-top: 45px;">
+        <p>
+          <i class="fa-solid fa-sparkles" style="color: var(--gold-accent); margin-right: 8px;"></i>
+          <strong>Looking for matching jewellery or custom bridal trousseau sets?</strong> Visit our store in Kaushalpuri or call us at <a href="tel:8738950652" style="color: var(--primary-berry); font-weight:700;">8738950652</a> to check matching shades & designs!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Store Gallery & Lookbook Section -->
+  <section class="section gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-title-wrap">
+        <div class="luxury-tag">Store Lookbook</div>
+        <h2 class="section-title">A Glimpse Inside Glam Box</h2>
+        <p class="section-subtitle">
+          Real photos of our boutique in Kaushalpuri, Lucknow. Explore our storefront, cosmetic counters, fashion jewelry displays, and decorative plant collections!
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="gallery-filter">
+        <button class="filter-btn active" data-filter="all">All Photos</button>
+        <button class="filter-btn" data-filter="store">Shop & Counters</button>
+        <button class="filter-btn" data-filter="jewellery">Jewellery & Bangles</button>
+        <button class="filter-btn" data-filter="fusion">Plants & Gifts</button>
+      </div>
+
+      <!-- Gallery Grid: Click to enlarge in Lightbox -->
+      <div class="gallery-grid" id="storeGalleryGrid">
+        <!-- Photo 1: Storefront with Official Signboard -->
+        <div class="gallery-item" data-category="store">
+          <img src="images/store-front.jpg" alt="Glam Box Storefront Signboard Near P.S Lawn">
+          <div class="gallery-overlay">
+            <h4>Glam Box Storefront & Signboard</h4>
+            <p>Easily spot our shop near P.S Lawn, Kaushalpuri, Lucknow</p>
+          </div>
+          <div class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+
+        <!-- Photo 2: Friendly In-Store Service & Nail Selection -->
+        <div class="gallery-item" data-category="store">
+          <img src="images/store-service.jpg" alt="Personalized Consultation at Glam Box">
+          <div class="gallery-overlay">
+            <h4>Friendly In-Store Assistance</h4>
+            <p>Helpful swatch testing, nail studio colors & personalized care</p>
+          </div>
+          <div class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+
+        <!-- Photo 3: Artificial Jewellery & Earrings Display -->
+        <div class="gallery-item" data-category="jewellery">
+          <img src="images/jewelry-display.jpg" alt="Artificial Jewellery and Earrings Counter">
+          <div class="gallery-overlay">
+            <h4>Fashion Jewellery & Studs</h4>
+            <p>Stunning partywear earrings, studs, bangles & accessories</p>
+          </div>
+          <div class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+
+        <!-- Photo 4: Main Counter & Beauty Shelves -->
+        <div class="gallery-item" data-category="store">
+          <img src="images/store-counter.jpg" alt="Glam Box Main Counter and Display">
+          <div class="gallery-overlay">
+            <h4>Boutique Counter & Vanity Tools</h4>
+            <p>Cosmetics, beauty tools, hair clips, and gift hampers</p>
+          </div>
+          <div class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+
+        <!-- Photo 5: Cute Hand-Painted Planters -->
+        <div class="gallery-item" data-category="fusion">
+          <img src="images/products/hand-painted-planters.jpg" alt="Hand painted Decorative Planters and Plants">
+          <div class="gallery-overlay">
+            <h4>Hand-Painted Decorative Planters</h4>
+            <p>Cute decorative floral pots, indoor plants & gift collections</p>
+          </div>
+          <div class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+
+        <!-- Photo 6: Premium Cosmetic Brands -->
+        <div class="gallery-item" data-category="store">
+          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80" alt="Authentic Brand Cosmetics">
+          <div class="gallery-overlay">
+            <h4>100% Authentic Beauty Brands</h4>
+            <p>Foundations, lipsticks, perfumes, eye palettes & bridal kits</p>
+          </div>
+          <div class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+      </div>
+
+      <!-- Real Store Welcome Note -->
+      <div class="photo-upload-hint" style="background: #FFF; border-color: var(--gold-accent);">
+        <i class="fa-solid fa-gem" style="color: var(--gold-accent);"></i>
+        <h4>Visit Our Store in Kaushalpuri!</h4>
+        <p>
+          All products shown in our lookbook are available in person at <strong>Glam Box</strong>. Come visit us near P.S Lawn for shade matching, jewellery pairing, and personalized service!
+        </p>
+      </div>
+    </div>
+  </section>
+    </div>
+  </section>
+
+  <!-- Customer Reviews & Testimonials Section -->
+  <section class="section reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-title-wrap">
+        <div class="luxury-tag">Customer Love & Feedback</div>
+        <h2 class="section-title">What Our Visitors Say</h2>
+        <p class="section-subtitle">
+          Real reviews and ratings from beauty enthusiasts who visited Glam Box in Lucknow.
+        </p>
+      </div>
+
+      <!-- Reviews Overview Card -->
+      <div class="reviews-summary-card">
+        <div class="reviews-score-box">
+          <div class="big-rating">4.9</div>
+          <div>
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div class="rating-count" id="totalReviewCount">Verified In-Store Customer Ratings</div>
+          </div>
+        </div>
+
+        <div class="reviews-cta-text">
+          <h3>Visited Our Store Recently?</h3>
+          <p>We'd love to hear your feedback on our products, service, and ambiance.</p>
+        </div>
+
+        <div>
+          <button class="btn btn-primary" id="openReviewModalBtn">
+            <i class="fa-solid fa-pen-to-square"></i> Write A Review
+          </button>
+        </div>
+      </div>
+
+      <!-- Reviews Grid (Loaded dynamically from app.js / defaultReviews) -->
+      <div class="reviews-grid" id="reviewsGrid">
+        <!-- Rendered by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Visit Us / Store Info & Map Section -->
+  <section class="section visit-section" id="visit">
+    <div class="container">
+      <div class="section-title-wrap">
+        <div class="luxury-tag">Location & Contact</div>
+        <h2 class="section-title">Visit Glam Box in Lucknow</h2>
+        <p class="section-subtitle">
+          Conveniently situated near P.S Lawn in Kaushalpuri. Drop by for swatches, shade matching, or direct consultations!
+        </p>
+      </div>
+
+      <div class="visit-grid">
+        <!-- Store Info Card -->
+        <div class="store-info-card">
+          <h3>Store Information</h3>
+          
+          <ul class="contact-info-list">
+            <!-- Address -->
+            <li class="contact-item">
+              <div class="contact-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact-details">
+                <h5>Store Address</h5>
+                <p>Near P.S Lawn, Kaushalpuri, Lucknow, Uttar Pradesh</p>
+                <small style="color: var(--muted-text); display: block; margin-top: 4px;">
+                  Easily reachable from main Kaushalpuri road.
+                </small>
+              </div>
+            </li>
+
+            <!-- Phone Numbers -->
+            <li class="contact-item">
+              <div class="contact-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="contact-details">
+                <h5>Contact & Inquiry Number</h5>
+                <div class="contact-phone-links">
+                  <a href="tel:8738950652" class="phone-action-pill">
+                    <i class="fa-solid fa-phone-flip"></i> <strong>8738950652</strong> (Call & WhatsApp)
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Timings -->
+            <li class="contact-item">
+              <div class="contact-icon">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div class="contact-details">
+                <h5>Store Timings</h5>
+                <p>Monday – Sunday: <strong>11:00 AM to 8:30 PM</strong></p>
+                <small style="color: var(--muted-text);">Open all 7 days of the week</small>
+              </div>
+            </li>
+
+            <!-- Note on orders -->
+            <li class="contact-item">
+              <div class="contact-icon">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </div>
+              <div class="contact-details">
+                <h5>Shopping Method</h5>
+                <p>Walk-in Retail & Direct Phone/WhatsApp Inquiries</p>
+                <small style="color: var(--muted-text);">No online payment checkout needed; pick up items directly!</small>
+              </div>
+            </li>
+          </ul>
+
+          <div class="direct-buttons-row">
+            <a href="tel:8738950652" class="btn btn-primary">
+              <i class="fa-solid fa-phone"></i> Call Now
+            </a>
+            <a href="https://wa.me/918738950652?text=Hi!!%20I%20am%20your%20Glam%20box%20customer,%20can%20you%20please%20solve%20my%20query:%20" target="_blank" class="btn btn-outline" style="border-color: #25D366; color: #15803d;">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="https://www.google.com/maps/search/Kaushalpuri+Lucknow+P.S+Lawn" target="_blank" class="btn btn-gold">
+              <i class="fa-solid fa-location-arrow"></i> Google Maps
+            </a>
+          </div>
+        </div>
+
+        <!-- Map & Directions Card -->
+        <div class="map-card-wrapper">
+          <div class="map-header">
+            <div>
+              <h4>Find Our Location</h4>
+              <p>Near P.S Lawn, Kaushalpuri, Lucknow</p>
+            </div>
+            <a href="https://www.google.com/maps/search/Kaushalpuri+Lucknow+near+P.S+Lawn" target="_blank" class="btn btn-outline" style="background:#FFF; font-size:0.8rem; padding: 6px 14px;">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Open In App
+            </a>
+          </div>
+
+          <div class="map-iframe-container">
+            <!-- Google Maps Embed centered on Kaushalpuri Lucknow -->
+            <iframe 
+              src="https://maps.google.com/maps?q=Kaushalpuri,%20Lucknow,%20Uttar%20Pradesh&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+              title="Glam Box Cosmetic Store Location Map" 
+              loading="lazy" 
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="store-landmarks">
+            <div class="landmark-item">
+              <i class="fa-solid fa-store"></i>
+              <span>Official Signboard: <strong>GLAM BOX (A Beauty & Fusion Store)</strong></span>
+            </div>
+            <div class="landmark-item">
+              <i class="fa-solid fa-landmark"></i>
+              <span>Landmark: <strong>Near P.S Lawn, Kaushalpuri</strong></span>
+            </div>
+            <div class="landmark-item">
+              <i class="fa-solid fa-square-parking"></i>
+              <span>Convenient Parking Space</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating Quick Action Buttons (Call + WhatsApp) -->
+  <div class="floating-actions">
+    <a href="https://wa.me/918738950652?text=Hi!!%20I%20am%20your%20Glam%20box%20customer,%20can%20you%20please%20solve%20my%20query:%20" target="_blank" class="floating-btn floating-whatsapp" aria-label="Chat on WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="floating-tooltip">Chat on WhatsApp</span>
+    </a>
+    <a href="tel:8738950652" class="floating-btn floating-call" aria-label="Call Glam Box">
+      <i class="fa-solid fa-phone"></i>
+      <span class="floating-tooltip">Call Store: 8738950652</span>
+    </a>
+  </div>
+
+  <!-- Review Modal -->
+  <div class="modal-overlay" id="reviewModal">
+    <div class="modal-content">
+      <button class="modal-close" id="closeReviewModal" aria-label="Close Modal">&times;</button>
+      <div class="luxury-tag">Customer Feedback</div>
+      <h3 class="modal-title">Review Glam Box</h3>
+      <p style="color: var(--muted-text); font-size: 0.9rem; margin-bottom: 20px;">
+        Share your experience visiting our cosmetic boutique in Kaushalpuri!
+      </p>
+
+      <form id="reviewForm">
+        <div class="form-group">
+          <label class="form-label" for="reviewerName">Your Name *</label>
+          <input type="text" id="reviewerName" class="form-input" placeholder="e.g. Priya Sharma" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Your Rating *</label>
+          <div class="star-rating-select" id="starRatingSelect">
+            <i class="fa-solid fa-star active" data-val="1"></i>
+            <i class="fa-solid fa-star active" data-val="2"></i>
+            <i class="fa-solid fa-star active" data-val="3"></i>
+            <i class="fa-solid fa-star active" data-val="4"></i>
+            <i class="fa-solid fa-star active" data-val="5"></i>
+          </div>
+          <small style="color: var(--muted-text);">Click stars to rate (1 to 5)</small>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="reviewerComment">Your Review & Experience *</label>
+          <textarea id="reviewerComment" class="form-textarea" rows="4" placeholder="Tell us about the cosmetic products you liked, shade matching assistance, staff friendliness..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">
+          <i class="fa-solid fa-paper-plane"></i> Submit Review
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Lightbox Modal for Gallery -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose">&times;</button>
+      <img src="" alt="Enlarged view" class="lightbox-img" id="lightboxImg">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-brand">
+          <a href="#home" class="brand-logo" style="margin-bottom: 10px;">
+            <span class="brand-name">Glam <span style="color: var(--rose-accent);">Box</span></span>
+            <span class="brand-subtitle" style="color: var(--rose-accent);">Cosmetics Boutique</span>
+          </a>
+          <p class="footer-about-text">
+            Glam Box is your trusted cosmetic & beauty destination in Kaushalpuri, Lucknow. We offer genuine cosmetics, bridal kits, skincare, and perfumes with friendly shade matching and consultations.
+          </p>
+          <div style="display: flex; gap: 12px; margin-top: 14px;">
+            <a href="https://wa.me/918738950652?text=Hi!!%20I%20am%20your%20Glam%20box%20customer,%20can%20you%20please%20solve%20my%20query:%20" target="_blank" style="color: #FFF; background: rgba(255,255,255,0.1); width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none;">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="tel:8738950652" style="color: #FFF; background: rgba(255,255,255,0.1); width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none;">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Our Boutique</a></li>
+            <li><a href="#products">Popular Products</a></li>
+            <li><a href="#gallery">Store Lookbook</a></li>
+            <li><a href="#reviews">Customer Reviews</a></li>
+            <li><a href="#visit">Location & Timings</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Our Services -->
+        <div>
+          <h4 class="footer-title">Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="#about"><i class="fa-solid fa-wand-magic-sparkles" style="color: var(--rose-accent); width: 18px; margin-right: 6px;"></i> Cosmetic Products</a></li>
+            <li><a href="#about"><i class="fa-solid fa-hand-sparkles" style="color: var(--rose-accent); width: 18px; margin-right: 6px;"></i> Mehndi</a></li>
+            <li><a href="#about"><i class="fa-solid fa-gift" style="color: var(--rose-accent); width: 18px; margin-right: 6px;"></i> Gift Items</a></li>
+            <li><a href="#about"><i class="fa-solid fa-om" style="color: var(--rose-accent); width: 18px; margin-right: 6px;"></i> Pooja Articles</a></li>
+            <li><a href="#about"><i class="fa-solid fa-seedling" style="color: var(--rose-accent); width: 18px; margin-right: 6px;"></i> Plants</a></li>
+            <li><a href="#about"><i class="fa-solid fa-ring" style="color: var(--rose-accent); width: 18px; margin-right: 6px;"></i> Bangles</a></li>
+            <li><a href="#about"><i class="fa-solid fa-gem" style="color: var(--rose-accent); width: 18px; margin-right: 6px;"></i> Artificial Jewellery</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Address -->
+        <div>
+          <h4 class="footer-title">Store Details</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Near P.S Lawn, Kaushalpuri, Lucknow, UP</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>
+              <a href="tel:8738950652" style="color:#FFF; text-decoration:none;">8738950652</a>
+            </span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-clock"></i>
+            <span>Mon – Sun: 11:00 AM – 8:30 PM</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Walk-in Inquiries & Direct Swatches</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="currentYear"></span> Glam Box Cosmetics. All rights reserved.
+        </div>
+        <div>
+          Informational & Review Showcase Website • Kaushalpuri, Lucknow
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script to update current year automatically -->
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Custom Scripts -->
+  <script src="js/app.js"></script>
+</body>
+</html>
