@@ -6,6 +6,15 @@ This website is styled with a **luxury rose, blush, champagne gold, and berry wi
 
 ---
 
+## 🌐 Live GitHub & Netlify Deployment Info
+
+- **Official GitHub Repository:** [https://github.com/73rudraksh-cmyk/glam-box](https://github.com/73rudraksh-cmyk/glam-box)
+- **GitHub Username:** `73rudraksh-cmyk`
+- **Repository Name:** `glam-box`
+- **Continuous Deployment:** Connected to Netlify for automatic live deployments.
+
+---
+
 ## 📍 Store Information Featured
 
 - **Store Name:** Glam Box *(A Beauty & Fusion Store – A unit of Rudraksh Services)*
